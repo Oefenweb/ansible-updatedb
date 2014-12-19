@@ -1,0 +1,39 @@
+---
+# defaults file for updatedb
+updatedb_prune_bind_mounts: true
+updatedb_prunenames: []
+updatedb_prunepaths:
+  - /tmp
+  - /var/spool
+  - /media
+  - /home/.ecryptfs
+updatedb_prunefs:
+  - NFS
+  - nfs
+  - nfs4
+  - rpc_pipefs
+  - afs
+  - binfmt_misc
+  - proc
+  - smbfs
+  - autofs
+  - iso9660
+  - ncpfs
+  - coda
+  - devpts
+  - ftpfs
+  - devfs
+  - mfs
+  - shfs
+  - sysfs
+  - cifs
+  - lustre_lite
+  - tmpfs
+  - usbfs
+  - udf
+  - fuse.glusterfs
+  - fuse.sshfs
+  - curlftpfs
+  - ecryptfs
+  - fusesmb
+  - devtmpfs

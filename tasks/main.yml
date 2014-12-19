@@ -1,0 +1,12 @@
+---
+# tasks file for updatedb
+- name: configure /etc/updatedb.conf
+  template:
+    src: etc/updatedb.conf.j2
+    dest: /etc/updatedb.conf
+    owner: root
+    group: root
+    mode: 0644
+    backup: true
+  notify: update updatedb
+  tags: [configuration, updatedb]

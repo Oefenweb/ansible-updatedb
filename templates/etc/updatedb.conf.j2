@@ -1,6 +1,6 @@
 # {{ ansible_managed }}
 
-PRUNE_BIND_MOUNTS="yes"
-# PRUNENAMES=".git .bzr .hg .svn"
-PRUNEPATHS="/tmp /var/spool /media /home/.ecryptfs"
-PRUNEFS="NFS nfs nfs4 rpc_pipefs afs binfmt_misc proc smbfs autofs iso9660 ncpfs coda devpts ftpfs devfs mfs shfs sysfs cifs lustre_lite tmpfs usbfs udf fuse.glusterfs fuse.sshfs curlftpfs ecryptfs fusesmb devtmpfs"
+PRUNE_BIND_MOUNTS="{{ 'yes' if updatedb_prune_bind_mounts else 'no' }}"
+PRUNENAMES="{{ updatedb_prunenames | join(' ') }}"
+PRUNEPATHS="{{ updatedb_prunepaths | join(' ') }}"
+PRUNEFS="{{ updatedb_prunefs | join(' ') }}"
