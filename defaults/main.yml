@@ -27,6 +27,7 @@ updatedb_prunefs:
   - shfs
   - sysfs
   - cifs
+  - lustre
   - lustre_lite
   - tmpfs
   - usbfs
