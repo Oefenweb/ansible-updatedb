@@ -1,5 +1,11 @@
 ---
 # tasks file for updatedb
+- name: install
+  apt:
+    name: mlocate
+    state: latest
+  tags: [configuration, updatedb, updatedb-install]
+
 - name: configure /etc/updatedb.conf
   template:
     src: etc/updatedb.conf.j2
@@ -9,4 +15,4 @@
     mode: 0644
     backup: true
   notify: update updatedb
-  tags: [configuration, updatedb]
+  tags: [configuration, updatedb, updatedb-configuration]

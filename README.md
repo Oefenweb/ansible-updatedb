@@ -6,7 +6,7 @@ Manage updatedb Debian-like systems.
 
 #### Requirements
 
-None
+* `mlocate` (will be installed)
 
 #### Variables
 
