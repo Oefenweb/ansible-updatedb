@@ -1,5 +1,5 @@
----
 # defaults file for updatedb
+---
 updatedb_prune_bind_mounts: true
 updatedb_prunenames: []
 updatedb_prunepaths:

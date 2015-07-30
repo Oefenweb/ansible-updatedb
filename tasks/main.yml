@@ -1,9 +1,11 @@
----
 # tasks file for updatedb
+---
 - name: install
   apt:
     name: mlocate
     state: latest
+    update_cache: true
+    cache_valid_time: 3600
   tags: [configuration, updatedb, updatedb-install]
 
 - name: configure /etc/updatedb.conf

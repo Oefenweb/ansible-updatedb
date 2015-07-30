@@ -25,7 +25,7 @@ None
 ---
 - hosts: all
   roles:
-  - updatedb
+    - updatedb
 ```
 
 #### License
