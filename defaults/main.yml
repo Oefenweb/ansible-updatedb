@@ -2,6 +2,11 @@
 ---
 updatedb_prune_bind_mounts: true
 updatedb_prunenames: []
+# updatedb_prunenames:
+#   - '.git'
+#   - '.bzr'
+#   - '.hg'
+#   - '.svn'
 updatedb_prunepaths:
   - /tmp
   - /var/spool
