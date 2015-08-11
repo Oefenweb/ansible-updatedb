@@ -11,7 +11,7 @@ Manage updatedb Debian-like systems.
 #### Variables
 
  * `updatedb_prune_bind_mounts` [default: `true`]: Whether or not bind mounts are scanned
- * `updatedb_prunenames` [default: `[]`]: A list of directory names (without paths) which should not be scanned (e.g. .git .bzr .hg .svn)
+ * `updatedb_prunenames` [default: `[]`]: A list of directory names (without paths) which should not be scanned (e.g. `.git`, `.bzr`, `.hg`, `.svn`)
  * `updatedb_prunepaths` [default: `[/tmp, /var/spool, /media, /home/.ecryptfs]`]: A list of path names of directories which should not be scanned
  * `updatedb_prunefs` [default: `[NFS, nfs, nfs4, rpc_pipefs, afs, binfmt_misc, proc, smbfs, autofs, iso9660, ncpfs, coda, devpts, ftpfs, devfs, mfs, shfs, sysfs, cifs, lustre_lite, tmpfs, usbfs, udf, fuse.glusterfs, fuse.sshfs, curlftpfs, ecryptfs, fusesmb, devtmpfs]`]: A list of file system types (as used in /etc/mtab) which should not be scanned
 
