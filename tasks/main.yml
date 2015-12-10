@@ -5,7 +5,7 @@
     name: mlocate
     state: latest
     update_cache: true
-    cache_valid_time: 3600
+    cache_valid_time: "{{ apt_update_cache_valid_time | default(3600) }}"
   tags: [configuration, updatedb, updatedb-install]
 
 - name: configure /etc/updatedb.conf
