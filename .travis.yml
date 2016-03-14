@@ -44,7 +44,7 @@ before_install:
   - sudo apt-get update -qq
 
   # Remove mlocate
-  - sudo apt-get remove --purge mlocate
+  - sudo apt-get remove --purge --yes mlocate
 
 install:
   # Install Ansible.
