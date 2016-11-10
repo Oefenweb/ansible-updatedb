@@ -3,10 +3,13 @@
 - name: install
   apt:
     name: mlocate
-    state: latest
+    state: "{{ apt_install_state | default('latest') }}"
     update_cache: true
     cache_valid_time: "{{ apt_update_cache_valid_time | default(3600) }}"
-  tags: [configuration, updatedb, updatedb-install]
+  tags:
+    - configuration
+    - updatedb
+    - updatedb-install
 
 - name: configure /etc/updatedb.conf
   template:
@@ -17,4 +20,7 @@
     mode: 0644
     backup: true
   notify: update updatedb
-  tags: [configuration, updatedb, updatedb-configuration]
+  tags:
+    - configuration
+    - updatedb
+    - updatedb-configuration
