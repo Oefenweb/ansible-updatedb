@@ -1,6 +1,6 @@
 ## updatedb
 
-[![Build Status](https://travis-ci.org/Oefenweb/ansible-updatedb.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-updatedb) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-updatedb-blue.svg)](https://galaxy.ansible.com/list#/roles/2463)
+[![Build Status](https://travis-ci.org/Oefenweb/ansible-updatedb.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-updatedb) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-updatedb-blue.svg)](https://galaxy.ansible.com/tersmitten/updatedb)
 
 Manage updatedb Debian-like systems.
 
