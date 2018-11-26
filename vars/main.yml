@@ -1,2 +1,4 @@
 # vars file for updatedb
 ---
+updatedb_dependencies:
+  - mlocate

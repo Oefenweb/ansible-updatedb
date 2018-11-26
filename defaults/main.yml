@@ -3,38 +3,45 @@
 updatedb_prune_bind_mounts: true
 updatedb_prunenames: []
 updatedb_prunepaths:
-  - /tmp
-  - /var/spool
-  - /media
   - /home/.ecryptfs
+  - /media
+  - /tmp
+  - /var/lib/ceph
+  - /var/lib/os-prober
+  - /var/lib/schroot
+  - /var/spool
 updatedb_prunefs:
+  - afs
+  - autofs
+  - binfmt_misc
+  - ceph
+  - cifs
+  - coda
+  - curlftpfs
+  - devfs
+  - devpts
+  - devtmpfs
+  - ecryptfs
+  - ftpfs
+  - fuse.ceph
+  - fuse.glusterfs
+  - fuse.mfs
+  - fuse.rozofs
+  - fuse.sshfs
+  - fusesmb
+  - iso9660
+  - lustre
+  - lustre_lite
+  - mfs
+  - ncpfs
   - NFS
   - nfs
   - nfs4
-  - rpc_pipefs
-  - afs
-  - binfmt_misc
   - proc
-  - smbfs
-  - autofs
-  - iso9660
-  - ncpfs
-  - coda
-  - devpts
-  - ftpfs
-  - devfs
-  - mfs
+  - rpc_pipefs
   - shfs
+  - smbfs
   - sysfs
-  - cifs
-  - lustre
-  - lustre_lite
   - tmpfs
-  - usbfs
   - udf
-  - fuse.glusterfs
-  - fuse.sshfs
-  - curlftpfs
-  - ecryptfs
-  - fusesmb
-  - devtmpfs
+  - usbfs
