@@ -1,4 +1,4 @@
-# defaults file for updatedb
+# defaults file
 ---
 updatedb_prune_bind_mounts: true
 updatedb_prunenames: []

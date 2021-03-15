@@ -1,4 +1,4 @@
-# vars file for updatedb
+# vars file
 ---
 updatedb_dependencies:
   - mlocate

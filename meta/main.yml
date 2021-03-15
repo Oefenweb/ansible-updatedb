@@ -1,6 +1,7 @@
-# meta file for updatedb
+# meta file
 ---
 galaxy_info:
+  namespace: oefenweb
   role_name: updatedb
   author: Mischa ter Smitten
   company: Oefenweb.nl B.V.

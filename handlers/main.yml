@@ -1,4 +1,4 @@
-# handlers file for updatedb
+# handlers file
 ---
 - name: update updatedb
   command: >
