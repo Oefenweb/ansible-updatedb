@@ -9,7 +9,7 @@ RUN curl -sL https://bootstrap.pypa.io/pip/2.7/get-pip.py | python -
 RUN rm -rf $HOME/.cache
 
 # ansible
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y gcc libffi-dev libssl-dev net-tools iproute2 ethtool && \
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y gcc libffi-dev libssl-dev && \
   apt-get clean
 RUN pip install ansible==2.9.15
 RUN rm -rf $HOME/.cache
