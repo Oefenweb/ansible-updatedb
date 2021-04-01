@@ -11,7 +11,7 @@ _updatedb_prunenames:
     - .arch-ids
     - "{arch}"
     - CVS
-updatedb_prunenames: "{{ _updatedb_prunenames[ansible_os_family] | default(_updatedb_prunnames['default']) }}"
+updatedb_prunenames: "{{ _updatedb_prunenames[ansible_os_family] | default(_updatedb_prunenames['default']) }}"
 _updatedb_prunepaths:
   default:
     - /home/.ecryptfs
@@ -36,7 +36,7 @@ _updatedb_prunepaths:
     - /var/spool/squid
     - /var/tmp
     - /var/lib/ceph
-updatedb_prunepaths: "{{ _updatedb_prunepaths[ansible_os_family] | default(_updatedb_prunpaths['default']) }}"
+updatedb_prunepaths: "{{ _updatedb_prunepaths[ansible_os_family] | default(_updatedb_prunepaths['default']) }}"
 _updatedb_prunefs:
   default:
     - afs
@@ -122,4 +122,4 @@ _updatedb_prunefs:
     - usbfs
     - ceph
     - fuse.ceph
-updatedb_prunefs: "{{ _updatedb_prunefs[ansible_os_family] | default(_updatedb_prunfs['default']) }}"
+updatedb_prunefs: "{{ _updatedb_prunefs[ansible_os_family] | default(_updatedb_prunefs['default']) }}"
