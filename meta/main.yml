@@ -19,6 +19,10 @@ galaxy_info:
         - jessie
         - stretch
         - buster
+    - name: EL
+      versions:
+        - 7
+        - 8
   galaxy_tags:
     - system
 dependencies: []
