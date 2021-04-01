@@ -10,6 +10,17 @@
     - configuration
     - updatedb
     - updatedb-install
+  when: ansible_pkg_mgr == 'apt'
+
+- name: install
+  package:
+    name: "{{ updatedb_dependencies }}"
+    state: "{{ apt_install_state | default('latest') }}"
+  tags:
+    - configuration
+    - updatedb
+    - updatedb-install
+  when: ansible_pkg_mgr != 'apt'
 
 - name: configure /etc/updatedb.conf
   template:
