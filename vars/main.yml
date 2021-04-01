@@ -1,4 +1,6 @@
 # vars file
 ---
-updatedb_dependencies:
-  - mlocate
+_updatedb_dependencies:
+  default:
+    - mlocate
+updatedb_dependencies: "{{ _updatedb_dependencies[ansible_os_family] | default(_updatedb_dependencies['default']) }}"
