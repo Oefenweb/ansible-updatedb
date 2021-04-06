@@ -1,5 +1,13 @@
 ## updatedb
 
+------------
+
+### Forked
+
+I am maintaining a fork of this role [benformosa/ansible-role-updatedb](https://github.com/benformosa/ansible-role-updatedb).
+
+------------
+
 [![CI](https://github.com/Oefenweb/ansible-updatedb/workflows/CI/badge.svg)](https://github.com/Oefenweb/ansible-updatedb/actions?query=workflow%3ACI)
 [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-updatedb-blue.svg)](https://galaxy.ansible.com/Oefenweb/updatedb)
 
