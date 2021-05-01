@@ -24,3 +24,14 @@
     - configuration
     - updatedb
     - updatedb-configuration
+
+- name: register path stat mlocate_disabled_stat
+  stat: path=/etc/cron.daily/mlocate.disabled
+  register: mlocate_disabled_stat
+- name: Enable mlocate in daily cron
+  command: mv /etc/cron.daily/mlocate.disabled /etc/cron.daily/mlocate
+  when: mlocate_disabled_stat.stat.exists
+  tags:
+  - configuration
+  - updatedb
+  - updatedb-configuration
