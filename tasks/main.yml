@@ -1,7 +1,7 @@
 # tasks file
 ---
 - name: install
-  apt:
+  ansible.builtin.apt:
     name: "{{ updatedb_dependencies }}"
     state: "{{ apt_install_state | default('latest') }}"
     update_cache: true
@@ -12,7 +12,7 @@
     - updatedb-install
 
 - name: configure /etc/updatedb.conf
-  template:
+  ansible.builtin.template:
     src: etc/updatedb.conf.j2
     dest: /etc/updatedb.conf
     owner: root
