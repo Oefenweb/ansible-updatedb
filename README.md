@@ -26,7 +26,7 @@ None
 ---
 - hosts: all
   roles:
-    - updatedb
+    - oefenweb.updatedb
 ```
 
 #### License
