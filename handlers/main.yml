@@ -3,3 +3,4 @@
 - name: update updatedb
   ansible.builtin.command: >
     updatedb
+  changed_when: true
