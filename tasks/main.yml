@@ -1,5 +1,16 @@
 # tasks file
 ---
+- name: include variables
+  ansible.builtin.include_vars: "{{ item }}"
+  with_first_found:
+    - "_{{ ansible_distribution_release }}.yml"
+    - "_{{ ansible_distribution | lower }}.yml"
+    - _default.yml
+  tags:
+    - configuration
+    - updatedb
+    - updatedb-include-variables
+
 - name: install
   ansible.builtin.apt:
     name: "{{ updatedb_dependencies }}"
