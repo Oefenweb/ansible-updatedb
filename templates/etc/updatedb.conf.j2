@@ -1,4 +1,4 @@
-# {{ ansible_managed }}
+{{ ansible_managed | comment }}
 
 PRUNE_BIND_MOUNTS="{{ 'yes' if updatedb_prune_bind_mounts else 'no' }}"
 PRUNENAMES="{{ updatedb_prunenames | join(' ') }}"
